@@ -1,0 +1,26 @@
+.block-info {
+  margin: 16px;
+  overflow: hidden;
+}
+
+.block-info h3 {
+  margin: 12px 0;
+}
+
+.block-info .block-info-item {
+  display: flex;
+  color: #666;
+  padding: 8px 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.block-info .block-info-item div:first-child {
+  width: 25%;
+}
+
+.block-info .block-info-item div:last-child {
+  flex: 1 auto;
+  overflow: hidden;
+  word-wrap: break-word;
+}
