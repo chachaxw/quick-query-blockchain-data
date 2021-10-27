@@ -1,0 +1,32 @@
+.search-wrapper {
+  max-width: 520px;
+  min-width: 280px;
+  margin: 16px;
+  height: 44px;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 22px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  background-color: white;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.08);
+  transition: border 0.25s ease-in;
+}
+
+.search-wrapper input {
+  height: 32px;
+  border: none;
+  flex: 1 auto;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.search-wrapper:hover {
+  border: 2px solid rgba(79, 106, 245, 0.2);
+}
+
+.search-wrapper:focus-within {
+  border: 2px solid rgba(79, 106, 245, 0.5);
+}
