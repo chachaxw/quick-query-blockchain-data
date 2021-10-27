@@ -1,18 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+
 import logo from '../logo.svg';
+import SearchBar from './components/search-bar';
+import BlockInfo from './components/block-info';
 
 const Home = () => {
+  const [result, setResult] = useState();
+
   return (
-    <header className="app-header">
-      <img src={logo} className="app-logo" alt="logo" />
-      <Link className="app-link" to="/about">
-        About
-      </Link>
-      <a className="app-link" href="https://docs.arcblock.io/abtnode/" target="_blank" rel="noopener noreferrer">
-        Learn Blocklet
-      </a>
-    </header>
+    <>
+      <header className="app-header">
+        <img src={logo} className="app-logo" alt="logo" />
+        <span>Search Blockchain Data</span>
+      </header>
+      <SearchBar onSearchResult={setResult} />
+      {result && <BlockInfo blockData={result} />}
+    </>
   );
 };
 
