@@ -1,0 +1,110 @@
+.block-transactions {
+  margin: 16px;
+  overflow: hidden;
+}
+
+.block-transactions h3 {
+  margin: 12px 0;
+}
+
+.block-transactions .block-transactions-item {
+  color: #666;
+  padding: 8px 0;
+  border-radius: 2px;
+}
+
+/* .block-transactions .block-transactions-item:hover {
+  background-color: #f2f2f2;
+} */
+
+.block-transactions-item-fee > span {
+  min-width: 10%;
+}
+
+.block-transactions-item > div {
+  flex: 1 auto;
+  overflow: hidden;
+  word-wrap: break-word;
+  padding: 4px 0;
+}
+
+.block-transactions-item-fee,
+.block-transactions-item-hash {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block-transactions-item-hash > div,
+.block-transactions-item-fee > div {
+  flex: 1 auto;
+  color: #353f52;
+}
+
+.block-transactions-item-fee .btc-value {
+  color: rgba(47, 64, 153, 1);
+  text-align: right;
+}
+
+.block-transactions-item-hash > span {
+  min-width: 10%;
+}
+
+.block-transactions-item-hash .hash {
+  color: rgba(47, 64, 153, 1);
+}
+
+.block-transactions-item-hash .time {
+  text-align: right;
+}
+
+.transaction-wrapper {
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+}
+
+.transaction-wrapper .transaction-label {
+  min-width: 10%;
+}
+
+.transaction-wrapper .transaction-list {
+  display: flex;
+  flex: 1 auto;
+  flex-wrap: wrap;
+}
+
+.transaction-list .transaction-in,
+.transaction-list .transaction-out {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.transaction-list .transaction-in {
+  padding-right: 16px;
+}
+
+.transaction-list .transaction-out {
+  padding-left: 16px;
+  text-align: right;
+}
+
+.tx-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  line-height: 1.6;
+}
+
+.tx-info .address {
+  flex: 1 auto;
+  color: rgba(47, 64, 153, 1);
+  margin-right: 16px;
+  overflow: hidden;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+}
+
+.tx-info .value {
+  min-width: 140px;
+  text-align: right;
+}

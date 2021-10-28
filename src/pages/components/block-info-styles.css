@@ -10,7 +10,7 @@
 .block-info .block-info-item {
   display: flex;
   color: #666;
-  padding: 8px 0;
+  padding: 10px 0;
   flex-wrap: wrap;
   border-bottom: 1px solid #e5e5e5;
 }

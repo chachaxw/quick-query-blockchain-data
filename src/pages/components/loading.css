@@ -1,0 +1,20 @@
+.loading {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: center no-repeat;
+  background-image: url(../../images/loading.svg);
+  background-size: 100%;
+  animation: laoding 1s infinite linear;
+  transform-origin: center;
+}
+
+@keyframes laoding {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
