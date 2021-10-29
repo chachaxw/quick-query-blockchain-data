@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { format } from 'date-fns';
 
 import './block-transactions-styles.css';
+import arrowRight from '../../images/arrow_right.svg';
 
 const BlockTranscations = (props) => {
   const { transactions } = props;
@@ -52,13 +53,16 @@ const BlockTranscations = (props) => {
                       ) : null
                     )}
                   </div>
-                  <div className="transaction-out">
-                    {item.out.map(({ n, addr, value }) => (
-                      <div className="tx-info" key={n}>
-                        <span className="address">{addr}</span>
-                        <span className="value">{Number(value / 100000000).toFixed(8)} BTC</span>
-                      </div>
-                    ))}
+                  <div className="transaction-out-wrapper">
+                    <img src={arrowRight} alt="right arrow" width="24" />
+                    <div className="transaction-out">
+                      {item.out.map(({ n, addr, value }) => (
+                        <div className="tx-info" key={n}>
+                          <span className="address">{addr}</span>
+                          <span className="value">{Number(value / 100000000).toFixed(8)} BTC</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>

@@ -61,6 +61,7 @@
   width: 100%;
   margin-top: 8px;
   display: flex;
+  color: #353f52;
 }
 
 .transaction-wrapper .transaction-label {
@@ -71,11 +72,11 @@
   display: flex;
   flex: 1 auto;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .transaction-list .transaction-in,
 .transaction-list .transaction-out {
-  width: 50%;
   box-sizing: border-box;
 }
 
@@ -86,6 +87,13 @@
 .transaction-list .transaction-out {
   padding-left: 16px;
   text-align: right;
+  flex: 1 auto;
+}
+
+.transaction-out-wrapper {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
 }
 
 .tx-info {
