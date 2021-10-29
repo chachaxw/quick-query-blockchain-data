@@ -56,12 +56,14 @@ const BlockTranscations = (props) => {
                   <div className="transaction-out-wrapper">
                     <img src={arrowRight} alt="right arrow" width="24" />
                     <div className="transaction-out">
-                      {item.out.map(({ n, addr, value }) => (
-                        <div className="tx-info" key={n}>
-                          <span className="address">{addr}</span>
-                          <span className="value">{Number(value / 100000000).toFixed(8)} BTC</span>
-                        </div>
-                      ))}
+                      {item.out.map(({ n, addr, value }) =>
+                        addr ? (
+                          <div className="tx-info" key={n}>
+                            <span className="address">{addr}</span>
+                            <span className="value">{Number(value / 100000000).toFixed(8)} BTC</span>
+                          </div>
+                        ) : null
+                      )}
                     </div>
                   </div>
                 </div>
