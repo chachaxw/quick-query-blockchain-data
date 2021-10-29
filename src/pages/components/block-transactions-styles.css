@@ -136,6 +136,7 @@
   .transaction-out-wrapper {
     width: 100%;
     margin-top: 8px;
+    flex-direction: column;
   }
 
   .tx-info {
